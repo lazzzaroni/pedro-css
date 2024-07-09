@@ -36,7 +36,7 @@ const spin = ref("");
 const bounce = ref("");
 const isPlayed = ref(false);
 const timeoutId = ref(0);
-const audio = ref(new Audio("/src/assets/pedro.mp3"));
+const audio = ref(new Audio("pedro.mp3"));
 
 function startBounce() {
   timeoutId.value = setTimeout(() => (bounce.value = "bounce"), 7500);
